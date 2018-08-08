@@ -7,12 +7,12 @@ const moment = require('moment');
 let username;
 let birthday;
 
-// ATUALIZAÇÕES PRA FAZER
+// CORREÇÕES:
 
-// Não precisa usar essas LET no início
-// Usar mais desestruturação, mesmo que repita às vezes
-// LEMBRAR que temos req.body E TAMBÉM req.query
-// Não precisa do bodyParser no app.use(). Pode usar Express
+// Não preciso usar essas LET no início, basta usar a req.query
+// Usar mais desestruturação
+// Lembrar que tenho req.body e também o req.query
+// Posso substituir o bodyParser pelo Express no app.use()
 // Poderia também passar o birthDate por URL
 // O middleware de checagem poderia checar nome e data
 // Quando o ESLint aceitar, usar ternárias
@@ -23,7 +23,7 @@ let birthday;
 // Poderia ser apenas:
 // const idade = moment().diff(birthDate, 'years', true);
 
-// Se o middleware de chacagem estiver verificando nome e data,
+// Se o middleware de checagem estiver verificando nome e data,
 // as rotas major e minor não precisam verificar nada
 
 // CONFIGURAÇÕES /////////////////////////////////////
